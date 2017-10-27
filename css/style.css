@@ -1,0 +1,53 @@
+html,
+body { height: 100%; margin: 0; padding: 0; }
+
+ul {
+  list-style-type: none;
+}
+
+#map { height: 100%; }
+
+#panel {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 5;
+        height:100%;
+	    width: 250px;
+        background-color: #234d71;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Courier','sans-serif';
+        color: #ccc;
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+@media screen and (max-width: 560px) {
+        #panel {
+            width: 200px;
+        }
+      }
+
+
+@media screen and (max-width: 460px) {
+        #panel {
+            width: 100%;
+            height: auto;
+            display: block;
+            padding: 0px;
+            padding-right: 5px;
+            margin-left: 0px;
+            position: fixed;
+        }
+
+        li {
+          display: inline ;
+          padding: 7px;
+        }
+
+        map {
+
+        }
+    }

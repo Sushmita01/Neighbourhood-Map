@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <title>Neighborhood Map</title>
+
+</head>
+
+<body>
+
+    <div id="panel">
+        <p><strong> Places in My Favourite Neighborhood </strong></p>
+        <div>
+            <select data-bind="options: categories, value: selectedCategory"></select>
+        </div>
+
+        <div>
+            <ul data-bind="foreach: selectLocation">
+                <li data-bind="text: title, click: showInfo, visible: show"></li>
+            </ul>
+        </div>
+
+
+    </div>
+    <div id="map"></div>
+    <script>
+
+    </script>
+
+
+    <script src='js/knockout-3.4.2.js'></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src='js/app.js'></script>
+    <script async defer src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDD7dWlaYOIw597PN_969tiAEKSBP9uVJc&v=3&callback=initMap"
+     onerror="mapError()"></script>
+</body>
+
+</html>
